@@ -439,8 +439,8 @@ ol {
   display: inline-block;
   padding: 10px 20px;
   border: none;
-  background-color: var(--clr-primary-700);
-  color: var(--clr-gray);
+  background-color: var(--clr-black);
+  color: var(--clr-white);
   font-size: var(--fs-base);
   transition: var(--transition-normal);
   position: relative;
@@ -470,6 +470,25 @@ ol {
 .FZ_btn.icon__phone::before{
   transform: translateY(-53%);
   background-image: url('../media/icon/phone-icon-white.svg');
+}
+
+.FZ_btn.icon__arrow{
+  padding-left: 20px;
+  padding-right: 55px;
+}
+
+.FZ_btn.icon__arrow::before{
+  transform: translateY(-53%);
+  left: unset;
+  right: 20px;
+  width: 29px;
+  height: 15px;
+  background-image: url('../media/icon/right-arrow-icon.svg');
+  object-fit: contain;
+}
+
+.FZ_btn.icon__arrow:hover{
+  padding-right: 60px;
 }
 
 /* ===========================

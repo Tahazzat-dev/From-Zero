@@ -25,7 +25,7 @@ body {
   line-height: var(--lh-normal);
   background-color: var(--clr-gray);
   font-size: var(--fs-base);
-  color: var(--clr-primary-900);
+  color: var(--clr-black);
   font-weight: 400;
   overflow-x: hidden;
 }
@@ -50,6 +50,10 @@ body {
       padding-bottom: var(--spacing-xl);
 }
 
+.FZ_section-gap-huge{
+      padding: var(--spacing-xl) 0;
+}
+
 .FZ_section .top-text{
       margin-bottom: var(--spacing-xs) ;
 }
@@ -57,6 +61,8 @@ body {
 .FZ_gap-lg-equal{
       padding: var(--spacing-lg) 0;
 }
+
+
 
 .FZ_gap-lg-bottom{
       padding-bottom: var(--spacing-lg);
@@ -367,6 +373,29 @@ gap: 40px;
       margin-top: 15px;
     }
 
+
+    /* our expertise */
+    .FZ_our-expertise-wrap{
+      background: var(--clr-black);
+      color: var(--clr-white);
+    }
+
+    .FZ_our-expertise-inner .expertises{
+      display: grid ;
+      grid-template-columns: repeat(auto-fill, minmax(330px, 1fr));
+      gap: 70px;
+    }
+
+    .FZ_our-expertise-inner .expertise-card{}
+    .FZ_our-expertise-inner .icon-text{
+      gap: 15px;
+      margin-bottom: 10px;
+    }
+
+    .FZ_our-expertise-inner .icon-text img{
+      width: 30px;
+      height: auto;
+    }
 
 
 
