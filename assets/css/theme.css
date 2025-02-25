@@ -443,9 +443,33 @@ ol {
   color: var(--clr-gray);
   font-size: var(--fs-base);
   transition: var(--transition-normal);
+  position: relative;
 }
+
 .FZ_btn:hover {
   background-color: var(--clr-primary-900)
+}
+
+.FZ_btn.btn_icon{
+  padding-left: 45px;
+}
+
+.FZ_btn.btn_icon::before{
+  content: "";
+  display: inline-block;
+  width: 18px;
+  height: 18px;
+  position: absolute;
+  left: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.FZ_btn.icon__phone::before{
+  transform: translateY(-53%);
+  background-image: url('../media/icon/phone-icon-white.svg');
 }
 
 /* ===========================

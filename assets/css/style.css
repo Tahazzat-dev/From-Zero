@@ -16,33 +16,6 @@
 
   --font-family: "Arial", sans-serif;
   --line-height: 1.5;
-
-  --spacing-xs: 40px;
-  --spacing-sm: 60px;
-  --spacing-md: 80px;
-  --spacing-lg: 100px;
-  --spacing-xl: 120px;
-
-  --transition-fast: 0.2s;
-  --transition-normal: 0.3s;
-  --transition-slow: 0.4s;
-
-  /* ==== global font size variables ====  */
-  --fs-xxs: 12px;
-  --fs-xs: 14px;
-  --fs-sm: 16px;
-  --fs-base: 18px;
-  --fs-md: 20px;
-  --fs-lg: 22px;
-  --fs-xl: 27px;
-  --fs-2xl: 32px;
-  --fs-3xl: 34px;
-  --fs-4xl: 40px;
-  --fs-5xl: 60px;
-  --fs-6xl: 72px;
-
-  /* ======= line height ======== */
-  --lh-normal: normal;
 }
 
 /* TODO: have to delete the above code */
@@ -57,10 +30,72 @@ body {
   overflow-x: hidden;
 }
 
+
+/* utility */
 .FZ_container {
   max-width: 1440px;
   margin: 0 auto;
   padding: 0 20px;
+}
+
+.FZ_section-gap-equal{
+      padding: var(--spacing-sm) 0;
+}
+
+.FZ_section-gap-top{
+      padding-top: var(--spacing-xl);
+}
+
+.FZ_section-gap-bottom{
+      padding-bottom: var(--spacing-xl);
+}
+
+.FZ_section .top-text{
+      margin-bottom: var(--spacing-xs) ;
+}
+
+.FZ_gap-lg-equal{
+      padding: var(--spacing-lg) 0;
+}
+
+.FZ_gap-lg-bottom{
+      padding-bottom: var(--spacing-lg);
+}
+.FZ_gap-lg-top{
+      padding-top: var(--spacing-lg);
+}
+
+.FZ_gap-md-equal{
+      padding: var(--spacing-md) 0;
+}
+
+.FZ_gap-md-bottom{
+      padding-bottom: var(--spacing-md);
+}
+.FZ_gap-md-top{
+      padding-top: var(--spacing-md);
+}
+
+.FZ_gap-sm-equal{
+      padding: var(--spacing-sm) 0;
+}
+
+.FZ_gap-sm-bottom{
+      padding-bottom: var(--spacing-sm);
+}
+.FZ_gap-sm-top{
+      padding-top: var(--spacing-sm);
+}
+
+.FZ_gap-xs-equal{
+      padding: var(--spacing-xs) 0;
+}
+
+.FZ_gap-xs-bottom{
+      padding-bottom: var(--spacing-xs);
+}
+.FZ_gap-xs-top{
+      padding-top: var(--spacing-xs);
 }
 
 /* Header style starts */
@@ -68,6 +103,12 @@ body {
 .FZ_header-wrap {
   background-color: var(--clr-secondary-500);
   padding: 10px 0;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  backdrop-filter: blur(5px);
+  z-index: 99999;
 }
 
 .FZ_header-inner {
@@ -146,9 +187,187 @@ gap: 40px;
       font-size: var(--fs-md);
 }
 
-.FZ_nav-links{}
-.FZ_nav-links{}
-.FZ_nav-links{}
+
+.FZ_home-banner-wrap{
+      width: 100%;
+      height: 100vh;
+      height: 100dvh;
+      min-height: 600px;
+      position: relative;
+}
+
+.FZ_home-banner-wrap .banner-bg,
+.FZ_home-banner-wrap video{
+      width: 100%;
+      height: 100%;
+      z-index: -1;
+      position: absolute;
+      top: 0;
+      left: 0;
+}
+.FZ_home-banner-wrap video{
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+}
+.FZ_home-banner-wrap .bg-overlay{
+      position: absolute;
+      z-index: 1;
+      top:0;
+      left: 0;
+
+      /* have to change this */
+      /* background-color: rgba(128, 128, 128, 0); */
+      width: 100%;
+      height: 100%;
+}
+
+.FZ_home-banner-inner{
+      padding-top: 80px;
+      height: 100%;
+}
+
+.FZ_home-banner-inner .banner-content{
+      background-color: var(--clr-secondary-500);
+      padding: 30px 20px;
+      text-align: center;
+      max-width: 1050px;
+      margin: 0 auto;
+      backdrop-filter: blur(2px);
+}
+
+.FZ_home-banner-inner h1{
+      margin: 20px 0;
+}
+
+.FZ_home-banner-inner p{
+      max-width: 800px;
+      margin: 0 auto;
+      margin-bottom: 20px;
+}
+
+
+.FZ_home-banner-wrap{}
+.FZ_home-banner-wrap{}
+
+/* home about us  */
+.FZ_home-about-us-inner{
+      max-width: 1200px;
+}
+
+/* experience counter */
+
+.FZ_counter {
+      position: relative;
+      padding-top: 70px;
+      padding-left: 70px;
+      width: 100%;
+      max-width: 400px;
+    }
+    
+    .FZ_counter .figures {
+      position: absolute;
+      top: 0;
+      left: 0;
+    }
+    
+    .FZ_counter .counter-outer {
+      position: relative;
+    }
+    
+    .FZ_counter .numbers {
+      height: 100%;
+      width: 100%;
+      line-height: 0;
+    }
+    
+    .FZ_counter .numbers svg mask {
+      width: 100%;
+      height: 100%;
+    }
+    
+    .FZ_counter .numbers svg mask .coming-alpha {
+      fill: var(--clr-white);
+      width: 100%;
+      height: 100%;
+    }
+    
+    .FZ_counter .numbers svg mask .count {
+      font-family: var(--font-family);
+    }
+    
+    .FZ_counter .numbers svg mask .number {
+      font-weight: 700;
+    }
+    
+    .FZ_counter .numbers svg mask .title {
+      font-size: var(--fs-lg);
+      letter-spacing: 3.5px;
+      font-weight: 300;
+      white-space: normal;
+    }
+    
+    .FZ_counter .numbers svg .base {
+      fill: #fff;
+      width: 100%;
+      height: 100%;
+    }
+    
+    .FZ_counter.alone_item .figures {
+      width: 370px;
+      height: 370px;
+    }
+    
+    .FZ_counter.alone_item .numbers svg {
+      width: 100%;
+      height: 350px;
+    }
+    
+    .FZ_counter.alone_item .numbers svg mask .number {
+      font-size: 165px;
+    }
+    
+    .FZ_counter.multi_item .figures {
+      width: 270px;
+      height: 270px;
+    }
+    
+    .FZ_counter.multi_item .numbers {
+      position: relative;
+    }
+    
+    .FZ_counter.multi_item .numbers svg {
+      width: 50%;
+      float: left;
+      height: 185px;
+    }
+    
+    .FZ_counter.multi_item .numbers svg mask .number {
+      font-size: 70px;
+    }
+    
+    .FZ_counter.no-figure.alone_item,
+    .FZ_counter.no-figure.multi_item {
+      padding-top: 0;
+      padding-left: 0;
+    }
+
+
+    /* home about us info */
+    .about-us-info-card{
+      width: 70%;
+      padding: 50px;
+    }
+
+    .about-us-info-card h3{
+      margin: 15px 0;
+    }
+
+    .about-us-info-card .FZ_btn{
+      margin-top: 15px;
+    }
+
+
 
 
 /* ================= 
@@ -231,11 +450,56 @@ gap: 40px;
             font-size: var(--fs-2xl);
       }
 
-          
+
+
+      /* home about us */
+     
+
+      
+      .FZ_home-about-us-inner{}
+
+      /* experience counter */
+      .FZ_counter {
+            padding-top: 40px;
+            padding-left: 40px;
+          }
+        
+          .FZ_counter.alone_item .figures {
+            width: 270px;
+            height: 270px;
+          }
+        
+          .FZ_counter.alone_item .numbers svg {
+            height: 320px;
+          }
+        
+          .FZ_counter.alone_item .numbers svg mask .number {
+            font-size: 120px;
+          }
+        
+          .FZ_counter.alone_item .numbers svg mask .title {
+            font-size: 11px;
+          }
 
 
 }
 
 /* phones ( small, medium ) */
 @media screen and (max-width: 560px) {
+
+
+      /* home page about us */
+      /* Experience card */
+      .FZ_counter.multi_item .numbers svg {
+            width: 100%;
+            height: 150px;
+          }
+        
+          .FZ_counter.multi_item .numbers svg mask .number {
+            font-size: 60px;
+          }
+        
+          .FZ_counter.multi_item .numbers svg mask .title {
+            font-size: 11px;
+          }
 }

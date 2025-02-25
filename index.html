@@ -12,39 +12,233 @@
   <body class="flex flex_center">
     <!-- Header -->
     <header class="FZ_header-wrap">
-      <div class="FZ_header-inner FZ_container  FZ_flex flex_align_center flex_justify_between">
+      <div
+        class="FZ_header-inner FZ_container FZ_flex flex_align_center flex_justify_between"
+      >
         <div class="FZ_site-logo">
-            <a href="#">
-                <img src="assets/media/img/site-logo.png" alt="Site Logo" />
-            </a>
+          <a href="#">
+            <img src="assets/media/img/site-logo.png" alt="Site Logo" />
+          </a>
+        </div>
+
+        <nav class="FZ_nav-links-wrap">
+          <ul class="FZ_nav-links FZ_flex flex_align_center">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Projects</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+        </nav>
+
+        <div class="FZ_menu-toggler-wrap">
+          <div class="FZ_menu-toggler FZ_flex flex_column">
+            <input class="FZ_hamberger-toggler-input" type="checkbox" />
+            <span></span>
+            <span></span>
+            <span></span>
           </div>
-    
-          <nav class="FZ_nav-links-wrap">
-            <ul class="FZ_nav-links FZ_flex flex_align_center">
-              <li><a href="#">Home</a></li>
-              <li><a href="#">Projects</a></li>
-              <li><a href="#">About</a></li>
-              <li><a href="#">Contact</a></li>
-            </ul>
-          </nav>
-    
-          <div class="FZ_menu-toggler-wrap">
-            <div class="FZ_menu-toggler FZ_flex flex_column">
-                <input class="FZ_hamberger-toggler-input" type="checkbox"/>
-                <span></span>
-                <span></span>
-                <span></span>
-            </div>
-          </div>
+        </div>
       </div>
     </header>
 
     <!-- Main -->
+    <main class="FZ_main-wrap">
+      <!-- banner starts -->
+      <div class="FZ_home-banner-wrap">
+        <!-- banner background -->
+        <div class="banner-bg">
+          <!-- <picture>
+                    <source srcset="assets/media/img/home-banner-small.png" media="(max-width: 767px)">
+                    <source srcset="assets/media/img/home-banner-medium.png" media="(max-width: 1023px) and (min-width: 768px)">
+                    <source srcset="assets/media/img/home-banner-large.jpg" media="(min-width: 1024px)">
+                    <img src="assets/media/img/home-banner-medium.png" alt="Home Banner Image" />
+                </picture> -->
 
+          <!-- overlay -->
+          <div class="bg-overlay"></div>
+
+          <video autoplay loop muted>
+            <source
+              src="assets/media/video/home-banner-video.mp4"
+              type="video/mp4"
+            />
+            Your browser does not support the video tag.
+          </video>
+
+          <!-- banner content -->
+        </div>
+        <div
+          class="FZ_home-banner-inner FZ_container FZ_flex flex_align_center"
+        >
+          <div class="banner-content">
+            <h4 class="fs-xl">House 30 Road No. 20, Dhaka 1230</h4>
+            <h1 class="fs-5xl">Awesome Design for the ELITE RESIDENCE</h1>
+            <p class="fs-md">
+              The main objective of the project – transformation of DHAKA City
+              in innovative SMART CITY and tourist center.
+            </p>
+            <a href="#" class="FZ_btn">EXPLORE IT</a>
+          </div>
+        </div>
+      </div>
+      <!-- banner ends -->
+
+      <!-- about us start -->
+      <section class="FZ_section-gap-top FZ_home-about-us-wrap">
+        <div class="FZ_home-about-us-inner FZ_container FZ_flex flex_align_center">
+
+            <!-- experience counter start-->
+            <div class="FZ_counter alone_item no-figure">
+                <div class="figures"></div>
+              
+                <div
+                  class="counter-outer s-back-switch"
+                  style="
+                    padding: 15px;
+                    background-image: url('assets/media/img/Experience-background-image.jpg');
+                  "
+                >
+                  <div class="numbers">
+                    <svg>
+                      <defs>
+                        <mask id="coming_mask_0" x="0" y="0">
+                          <rect
+                            class="coming-alpha"
+                            x="0"
+                            y="0"
+                            width="100%"
+                            height="100%"
+                          ></rect>
+                          <text
+                            class="count number"
+                            x="50%"
+                            y="45%"
+                            text-anchor="middle"
+                            alignment-baseline="middle"
+                          >
+                            14
+                          </text>
+                          <text
+                            class="count title"
+                            x="50%"
+                            y="70%"
+                            text-anchor="middle"
+                            alignment-baseline="middle"
+                          >
+                            YEARS OF EXPERIENCE
+                          </text>
+                        </mask>
+                      </defs>
+                      <rect
+                        style="
+                          -webkit-mask: url(#coming_mask_0);
+                          mask: url(#coming_mask_0);
+                        "
+                        class="base"
+                        x="0"
+                        y="0"
+                        width="100%"
+                        height="100%"
+                      ></rect>
+                    </svg>
+                  </div>
+                </div>
+              </div>
+              <!-- experience counter ends-->
+
+              <!-- about us info starts-->
+               <div class="about-us-info-card">
+                <div class="content">
+                    <h4 class="fs-lg">ABOUT US</h4>
+                    <h3 class="fs-4xl">We Offer Top-Quality Interior and Exterior Designs in Bangladesh</h3>
+                    <p>At FromZero, we specialize in comprehensive interior and exterior design solutions, transforming spaces into reflections of personality and purpose. Our designs seamlessly blend aesthetics with functionality, creating cohesive environments tailored to your needs.</p>
+                    <a href="#" class="FZ_btn btn_icon icon__phone">Contact Us</a>
+                </div>
+               </div>
+              <!-- about us info ends-->
+        </div>
+      </section>
+      <!-- about us ends -->
+
+      <div style="max-width: 500px">
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aliquid
+        quaerat earum natus eius, incidunt at illum asperiores esse pariatur,
+        corporis unde. Dolorem ipsam, alias unde qui corrupti esse consequatur
+        incidunt earum sunt, voluptatum, sed non porro recusandae quasi!
+        Laudantium impedit amet nemo provident, magnam soluta, id blanditiis
+        iure similique molestiae dolores dolore exercitationem nam quia odit.
+        Maiores dolorum aliquid accusamus vitae quisquam et neque soluta veniam
+        eos error eius optio, quam sit nostrum deleniti molestias adipisci quod
+        aperiam, saepe reprehenderit eveniet labore. Sed explicabo laboriosam
+        nulla corporis earum corrupti reprehenderit repudiandae dolorem ducimus
+        blanditiis. Perferendis laborum quos animi quaerat veniam corporis
+        recusandae quam neque incidunt! Molestias consectetur quas libero, nihil
+        consequatur inventore cupiditate dolorum delectus maiores veniam earum
+        nam. Obcaecati voluptatum perferendis tempora eum voluptatem eaque
+        magnam quaerat facere cum modi et facilis accusantium, similique
+        consequuntur consequatur possimus, necessitatibus distinctio commodi
+        quidem non sit porro, suscipit repellat. Consequuntur repellendus totam
+        praesentium quae iusto quia commodi nihil unde sint eum. Dolorum, nihil.
+        Ratione dolorum facere harum! Debitis perspiciatis facere, nam ab
+        aliquid id qui maiores facilis. Natus tempora delectus doloremque, rem
+        perspiciatis exercitationem laborum, minima, modi consequatur totam odio
+        magni expedita? Molestias asperiores sapiente quibusdam consectetur ea,
+        itaque enim, iste veritatis odit quia alias impedit adipisci ratione in?
+        Eius quod corporis in delectus fugit? Veritatis, necessitatibus. Eum
+        dolor eos laudantium quia est? Aliquid iusto commodi vel fugit dolores
+        maiores, rerum, quibusdam fugiat voluptatum ut eum labore in doloribus
+        iure optio quis. Officia blanditiis minus explicabo fugit sapiente
+        soluta at recusandae deleniti pariatur perspiciatis reprehenderit
+        ducimus, fugiat iure nobis molestias deserunt illum corrupti ipsam
+        harum, iste neque eos molestiae sit! Libero dolorum ratione dignissimos
+        repudiandae voluptatum ea, amet odit animi quod. Dolorem unde rerum
+        facilis consequuntur aliquid sapiente iure autem, ipsa earum voluptate
+        laborum corrupti sequi vero soluta magni ex. Perspiciatis, pariatur
+        quisquam. Possimus quidem assumenda provident, quae blanditiis corporis
+        ipsum perferendis repudiandae asperiores, doloremque mollitia!
+        Voluptatibus eveniet animi sit nihil obcaecati veniam sed similique id
+        nostrum, sint laborum, itaque exercitationem quasi voluptatum blanditiis
+        architecto. Rerum adipisci perspiciatis eveniet, nihil, error
+        dignissimos praesentium alias inventore laborum, quod explicabo? Iste
+        illo sunt corporis. Modi culpa ipsum a quis tempora dolorem est harum
+        omnis, magnam, molestiae eius eveniet sed deserunt facere iusto ad
+        reprehenderit saepe quia praesentium alias quibusdam. Quasi et quidem ex
+        cum eius numquam dignissimos non adipisci. Quod reiciendis fugiat
+        ducimus porro id tempora perferendis optio deleniti consequuntur odio
+        dolore placeat officiis et cupiditate nesciunt architecto tenetur
+        similique omnis asperiores est recusandae, sed maiores dignissimos.
+        Distinctio, molestiae? Quod necessitatibus perspiciatis fugit
+        dignissimos nihil facere dolore blanditiis similique minima error, ipsa
+        quis nemo, iusto consequuntur cum maxime exercitationem ducimus
+        repellendus quam nostrum! Ipsum similique, facere distinctio numquam
+        libero consectetur doloremque cumque harum obcaecati, doloribus impedit
+        expedita repellendus! Dolores saepe iste aliquid rem vitae. Reiciendis
+        sunt libero veritatis qui provident incidunt sint quis necessitatibus
+        earum eveniet alias id placeat corporis sapiente itaque mollitia dolore
+        eum, omnis ab ullam, officiis eaque blanditiis quae reprehenderit!
+        Quaerat, repudiandae facilis est et molestiae itaque, sit ullam sed
+        consequuntur nihil tenetur, iusto consequatur atque dolores ad possimus
+        eveniet corrupti amet omnis error cupiditate illo nesciunt facere!
+        Dolorem suscipit exercitationem, commodi quisquam deleniti iure, fugiat
+        quod nobis consequuntur sit ducimus consectetur quo ad. Dicta illum
+        inventore aspernatur officia cum, cumque nemo placeat labore ducimus
+        quisquam unde animi illo perferendis eaque nihil tempore quam! Totam
+        odio molestias accusantium nulla quisquam enim officiis neque
+        consectetur, ut nisi consequatur nihil quibusdam error rerum beatae
+        recusandae distinctio eaque minus voluptas suscipit laborum. Placeat
+        architecto et eveniet impedit! Illo cumque harum laboriosam laudantium
+        id modi libero, aut, placeat eligendi numquam, accusamus architecto enim
+        inventore dignissimos sit deleniti. Quia soluta reiciendis tempore illo
+        magnam. Quisquam in consectetur cum.
+      </div>
+    </main>
     <!-- Footer -->
+
+    <footer></footer>
 
     <!-- scripts -->
     <script src="assets/js/jquery-3.7.1.min.js"></script>
+    <script src="assets/js/lenis.js"></script>
     <script src="assets/js/slick-slider.js"></script>
     <script src="assets/js/script.js"></script>
   </body>
