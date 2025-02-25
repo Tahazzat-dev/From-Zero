@@ -12,13 +12,15 @@
   <body class="flex flex_center">
     <!-- Header -->
     <header class="FZ_header-wrap">
-      <div class="FZ_header-inner FZ_container">
+      <div class="FZ_header-inner FZ_container  FZ_flex flex_align_center flex_justify_between">
         <div class="FZ_site-logo">
-            <img src="" alt="Site Logo" />
+            <a href="#">
+                <img src="assets/media/img/site-logo.png" alt="Site Logo" />
+            </a>
           </div>
     
-          <nav>
-            <ul class="nav-links">
+          <nav class="FZ_nav-links-wrap">
+            <ul class="FZ_nav-links FZ_flex flex_align_center">
               <li><a href="#">Home</a></li>
               <li><a href="#">Projects</a></li>
               <li><a href="#">About</a></li>
@@ -28,7 +30,7 @@
     
           <div class="FZ_menu-toggler-wrap">
             <div class="FZ_menu-toggler FZ_flex flex_column">
-                <input type="checkbox"/>
+                <input class="FZ_hamberger-toggler-input" type="checkbox"/>
                 <span></span>
                 <span></span>
                 <span></span>
@@ -42,6 +44,8 @@
     <!-- Footer -->
 
     <!-- scripts -->
+    <script src="assets/js/jquery-3.7.1.min.js"></script>
+    <script src="assets/js/slick-slider.js"></script>
     <script src="assets/js/script.js"></script>
   </body>
 </html>

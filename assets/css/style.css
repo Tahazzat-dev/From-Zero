@@ -1,119 +1,241 @@
-.FZ_container{
-      max-width: 1440px;
-      margin:  0 auto;
-      padding: 0 20px;
+/* ===========================
+   Root Variables
+=========================== */
+:root {
+  --clr-primary-900: #28292b;
+  --clr-primary-700: #393e46;
+  --clr-primary-500: #4d5563;
+  --clr-secondary-700: #929aab;
+  --clr-secondary-500: #c2c7d4dd;
+  --clr-success: #28a745;
+  --clr-danger: #dc3545;
+  --clr-warning: #ffc107;
+  --clr-white: #f7f7f7;
+  --clr-gray: #eeeeee;
+  --clr-black: #1c1d1e;
+
+  --font-family: "Arial", sans-serif;
+  --line-height: 1.5;
+
+  --spacing-xs: 40px;
+  --spacing-sm: 60px;
+  --spacing-md: 80px;
+  --spacing-lg: 100px;
+  --spacing-xl: 120px;
+
+  --transition-fast: 0.2s;
+  --transition-normal: 0.3s;
+  --transition-slow: 0.4s;
+
+  /* ==== global font size variables ====  */
+  --fs-xxs: 12px;
+  --fs-xs: 14px;
+  --fs-sm: 16px;
+  --fs-base: 18px;
+  --fs-md: 20px;
+  --fs-lg: 22px;
+  --fs-xl: 27px;
+  --fs-2xl: 32px;
+  --fs-3xl: 34px;
+  --fs-4xl: 40px;
+  --fs-5xl: 60px;
+  --fs-6xl: 72px;
+
+  /* ======= line height ======== */
+  --lh-normal: normal;
 }
 
+/* TODO: have to delete the above code */
 
+body {
+  font-family: var(--font-family);
+  line-height: var(--lh-normal);
+  background-color: var(--clr-gray);
+  font-size: var(--fs-base);
+  color: var(--clr-primary-900);
+  font-weight: 400;
+  overflow-x: hidden;
+}
 
-
-
-
-
-
-
+.FZ_container {
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
 
 /* Header style starts */
-.FZ_menu-toggler {
-      position: relative;
-      z-index: 1;
-      -webkit-user-select: none;
-      user-select: none;
-      width: 30px;
-      height: 20px;
-      justify-content: space-between;
-      overflow: hidden;
-    }
 
-    .FZ_menu-toggler input {
-      display: block;
-      width: 40px;
-      height: 32px;
-      position: absolute;
-      top: -7px;
-      cursor: pointer;
-      opacity: 0; 
-      z-index: 2; 
-      -webkit-touch-callout: none;
-    }
-    
-    .FZ_menu-toggler span {
-      display: block;
-      width: 100%;
-      height: 4px;
-      background: var(--clr-primary-700);
-      z-index: 1;
-      transition: all var(--transition-normal)
-    }
-    
-    .FZ_menu-toggler span:first-child {
-      transform-origin: 0% 0%;
-    }
-    
-.FZ_menu-toggler span:nth-last-child(3) {
-      transform-origin: 4px 0px;
+.FZ_header-wrap {
+  background-color: var(--clr-secondary-500);
+  padding: 10px 0;
 }
-    
-    
-    .FZ_menu-toggler input:checked ~ span:nth-last-child(1) {
-      transform: rotate(-44deg) translate(3px, -7px);
-      width: 120%;
-    }
 
-    .FZ_menu-toggler input:checked ~ span:nth-last-child(2) {
-      transform: translateX(-100%);
-    }
+.FZ_header-inner {
+  gap: 50px;
+}
 
-    .FZ_menu-toggler input:checked ~ span:nth-last-child(3) {
-      transform: rotate(44deg) translate(0px, -2.5px);
-      width: 120%;
-    }
+/* navbar toggler */
 
+.FZ_menu-toggler-wrap {
+  display: none;
+}
+.FZ_menu-toggler {
+  position: relative;
+  z-index: 1;
+  -webkit-user-select: none;
+  user-select: none;
+  width: 30px;
+  height: 20px;
+  justify-content: space-between;
+  overflow: hidden;
+}
 
-    
+.FZ_menu-toggler input {
+  display: block;
+  width: 40px;
+  height: 32px;
+  position: absolute;
+  top: -7px;
+  cursor: pointer;
+  opacity: 0;
+  z-index: 2;
+  -webkit-touch-callout: none;
+}
 
+.FZ_menu-toggler span {
+  display: block;
+  width: 100%;
+  height: 4px;
+  background: var(--clr-primary-700);
+  z-index: 1;
+  transition: all var(--transition-normal);
+}
 
+.FZ_menu-toggler span:first-child {
+  transform-origin: 0% 0%;
+}
 
+.FZ_menu-toggler span:nth-last-child(3) {
+  transform-origin: 4px 0px;
+}
+
+.FZ_menu-toggler input:checked ~ span:nth-last-child(1) {
+  transform: rotate(-44deg) translate(3px, -7px);
+  width: 120%;
+}
+
+.FZ_menu-toggler input:checked ~ span:nth-last-child(2) {
+  transform: translateX(-100%);
+}
+
+.FZ_menu-toggler input:checked ~ span:nth-last-child(3) {
+  transform: rotate(44deg) translate(0px, -2.5px);
+  width: 120%;
+}
+
+/* navbar */
+.FZ_nav-links{
+gap: 40px;
+}
+
+.FZ_nav-links li{
+      
+}
+
+.FZ_nav-links li a{
+      font-size: var(--fs-md);
+}
+
+.FZ_nav-links{}
+.FZ_nav-links{}
+.FZ_nav-links{}
 
 
 /* ================= 
       Device responsiveness
              ================== */
 
+/* extra large monitor */
+@media screen and (max-width: 1680px) {
+}
 
- /* extra large monitor */
- @media screen and (max-width: 1680px) {
-  
- }
-
- /* large monitor */
+/* large monitor */
 @media screen and (max-width: 1440px) {
-  
 }
 
 /* small monitor */
 @media screen and (max-width: 1240px) {
-  
 }
 
 /* tablets ( extra large )  */
 @media screen and (max-width: 1023px) {
-  
 }
-
 
 /* tablets ( medium )  */
 @media screen and (max-width: 840px) {
-  
 }
-
 
 /* phones ( extra large )  */
 @media screen and (max-width: 767px) {
-  
+
+
+      .FZ_container{
+            padding: 0 16px;
+      }
+
+
+      /* header */
+      .FZ_menu-toggler-wrap {
+            display: block;
+      }
+      .FZ_menu-toggler-wrap {
+            z-index: 999;
+      }
+
+      .FZ_header-inner .FZ_site-logo{
+            z-index: 9999;
+      }
+
+          .FZ_header-inner .FZ_site-logo img{
+            max-width: 110px;
+          }
+
+          .FZ_nav-links-wrap{
+            position: fixed;
+            top: 0;
+            left: 0;
+            z-index: 999;
+            width: 100%;
+            height: 100%;
+            padding: 70px 0;
+            transition: var(--transition-normal);
+            background-color: var(--clr-secondary-900);
+            transform: translateX(-110%);
+          }
+
+          .FZ_nav-links-wrap.open{
+            transform: translateX(0);
+          }
+
+
+          .FZ_nav-links{
+            flex-direction: column;
+            gap: 30px;
+            justify-content: center;
+            height: 100%;
+            border-top: 1px solid transparent;
+            border-top: 1px solid var(--clr-primary-500);
+          }
+
+          .FZ_nav-links li a{
+            font-size: var(--fs-2xl);
+      }
+
+          
+
+
 }
 
 /* phones ( small, medium ) */
 @media screen and (max-width: 560px) {
-  
 }
