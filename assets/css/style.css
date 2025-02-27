@@ -775,10 +775,33 @@ padding: 20px;
 
 /* small monitor */
 @media screen and (max-width: 1240px) {
+
+
+  /* home our services */
+  .FZ_our-expertise-inner .expertises {
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 50px;
+}
 }
 
 /* tablets ( extra large )  */
 @media screen and (max-width: 1023px) {
+
+
+
+  /* home about us */
+  .FZ_counter {
+    padding-top: 40px;
+    padding-left: 40px;
+    width: 100%;
+    max-width: 380px;
+}
+
+.about-us-info-card {
+  width: 70%;
+  padding: 30px;
+}
+
 }
 
 /* tablets ( medium )  */
@@ -816,7 +839,8 @@ padding: 20px;
             left: 0;
             z-index: 999;
             width: 100%;
-            height: 100%;
+            height: 100vh;
+            height: 100dvh;
             padding: 70px 0;
             transition: var(--transition-normal);
             background-color: var(--clr-secondary-700);
@@ -847,12 +871,22 @@ padding: 20px;
      
 
       
-      .FZ_home-about-us-inner{}
+      .FZ_home-about-us-inner{
+        flex-direction: column;
+      }
+
+      /* home about us */
+.about-us-info-card {
+  width: 100%;
+  padding: 0px;
+  margin-top: 40px;
+}
 
       /* experience counter */
       .FZ_counter {
             padding-top: 40px;
             padding-left: 40px;
+            max-width: 400px;
           }
         
           .FZ_counter.alone_item .figures {
@@ -869,7 +903,7 @@ padding: 20px;
           }
         
           .FZ_counter.alone_item .numbers svg mask .title {
-            font-size: 11px;
+            font-size: 16px;
           }
 
 
@@ -899,6 +933,14 @@ padding: 20px;
           .FZ_counter.multi_item .numbers svg mask .title {
             font-size: 11px;
           }
+
+
+          /* home our services */
+           /* home our services */
+  .FZ_our-expertise-inner .expertises {
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 35px;
+}
 
 
 }
