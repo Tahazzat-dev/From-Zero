@@ -943,10 +943,21 @@ body {
     font-size: 11px;
   }
 
-  /* home our services */
-  /* home our services */
+  /* home our expertise */
   .FZ_our-expertise-inner .expertises {
     grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
     gap: 35px;
   }
+
+  /* home our services */
+  .FZ_services {
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: var(--spacing-xs);
+}
+
+.FZ_services .service .content {
+  padding: 16px;
+  transform: translateY(70%);
+}
+
 }
