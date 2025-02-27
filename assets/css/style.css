@@ -399,6 +399,94 @@ gap: 40px;
 
 
 
+    /* home latest projects */
+.FZ_our-projects-wrap{
+width: 100%;
+}
+
+.FZ_our-projects-inner{
+  max-width: 1200px;
+}
+
+.FZ_our-projects-inner .top-text h5{
+  font-weight: 300;
+  margin-bottom: 10px;
+}
+
+.FZ_latest-projects{
+ margin: 0 auto;
+ gap: var(--spacing-md);
+}
+
+.FZ_latest-projects .latest-project{
+  /* gap: var(--spacing-xs); */
+}
+
+.FZ_latest-projects .latest-project {}
+
+.FZ_latest-projects .latest-project:nth-child(even){
+  flex-direction: row-reverse;
+}
+
+.FZ_latest-projects .latest-project:nth-child(even) .content{
+text-align: right;
+}
+
+.FZ_latest-projects .latest-project-images{
+  width: 57%;
+  max-height: 400px;
+  overflow: hidden;
+}
+
+
+.FZ_latest-projects .latest-project-images-slider, 
+.FZ_latest-projects .latest-project-images img{
+  width:100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+
+
+.FZ_latest-projects .content{
+  width: 37%;
+}
+
+
+.FZ_latest-projects .content h4{
+  margin: 10px 0;
+}
+
+.FZ_latest-projects .content h6{
+position: relative;
+}
+
+.FZ_latest-projects .content h6::before{
+  position: absolute;
+  display: block;
+  width: 100px;
+  height: 1px;
+  background-color: var(--clr-primary-700);
+  content: "";
+  top: 48%;
+  left: -110px;
+}
+
+.FZ_latest-projects .latest-project:nth-child(even) .content h6::before{
+  left: unset;
+  right: -110px;
+}
+
+
+.FZ_latest-projects .content .FZ_btn{
+  margin-top: 15px;
+}
+
+.FZ_our-projects-inner{}
+.FZ_our-projects-inner{}
+    
+
+
 /* ================= 
       Device responsiveness
              ================== */

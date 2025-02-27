@@ -485,10 +485,11 @@ ol {
   height: 15px;
   background-image: url('../media/icon/right-arrow-icon.svg');
   object-fit: contain;
+  transition: var(--transition-normal);
 }
 
-.FZ_btn.icon__arrow:hover{
-  padding-right: 60px;
+.FZ_btn.icon__arrow:hover::before{
+  right: 15px;
 }
 
 /* ===========================
