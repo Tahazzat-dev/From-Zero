@@ -375,9 +375,25 @@ gap: 40px;
 
 
     /* our expertise */
+
+
     .FZ_our-expertise-wrap{
       background: var(--clr-black);
       color: var(--clr-white);
+    }
+
+    .FZ_our-expertise-inner .top-text{
+      margin-bottom: var(--spacing-sm);
+    }
+    
+    .FZ_our-expertise-inner .top-text h5{
+      font-weight: 300;
+      margin-bottom: 10px;
+      text-align: center;
+    }
+    
+    .FZ_our-expertise-inner .top-text h3{
+      text-align: center;
     }
 
     .FZ_our-expertise-inner .expertises{
@@ -386,7 +402,6 @@ gap: 40px;
       gap: 70px;
     }
 
-    .FZ_our-expertise-inner .expertise-card{}
     .FZ_our-expertise-inner .icon-text{
       gap: 15px;
       margin-bottom: 10px;
@@ -408,21 +423,24 @@ width: 100%;
   max-width: 1200px;
 }
 
+.FZ_our-projects-inner .top-text{
+  margin-bottom: var(--spacing-sm);
+}
+
 .FZ_our-projects-inner .top-text h5{
   font-weight: 300;
   margin-bottom: 10px;
+  text-align: center;
+}
+
+.FZ_our-projects-inner .top-text h3{
+  text-align: center;
 }
 
 .FZ_latest-projects{
  margin: 0 auto;
  gap: var(--spacing-md);
 }
-
-.FZ_latest-projects .latest-project{
-  /* gap: var(--spacing-xs); */
-}
-
-.FZ_latest-projects .latest-project {}
 
 .FZ_latest-projects .latest-project:nth-child(even){
   flex-direction: row-reverse;
@@ -482,10 +500,97 @@ position: relative;
   margin-top: 15px;
 }
 
-.FZ_our-projects-inner{}
-.FZ_our-projects-inner{}
-    
+/* our services */
+.FZ_our-services-wrap{
+  /* background-color: var(--clr-black); */
+  /* color: var(--clr-white); */
+}
 
+
+.FZ_our-services-inner .top-text{
+  margin-bottom: var(--spacing-sm);
+}
+
+.FZ_our-services-inner .top-text h5{
+  font-weight: 300;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.FZ_our-services-inner .top-text h3{
+  text-align: center;
+}
+
+.FZ_services{
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(330px, 1fr));
+  gap: var(--spacing-xs);
+}
+
+.FZ_services .service{
+  position: relative;
+  z-index: 1;
+  width: 100%;
+  height: 300px;
+  overflow: hidden;
+}
+
+.FZ_services .service .service-bg{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.FZ_services .service img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1;
+  transition: 0.8s ease-out;
+}
+
+.FZ_services .service:hover img{
+  
+}
+
+.FZ_services .service .content{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  bottom: 0;
+  left: 0;
+ padding: 20px;
+ transition: var(--transition-slow);
+ transform: translateY(75%);
+ background-color: rgba(183, 183, 195, 0.536);
+ backdrop-filter: blur(15px);
+ overflow: hidden;
+}
+
+.FZ_services .service:hover .content{
+  transform: translateY(0);
+}
+
+.FZ_services .service .content h4{
+  text-align: center;
+  transition: var(--transition-normal);
+  margin-bottom: 15px;
+}
+
+.FZ_services .service .content p{
+  padding-top: 20px;
+  transform: scale(0);
+  transition: 0.6s;
+}
+
+.FZ_services .service:hover .content p{
+  padding-top: 0;
+  transform: scale(1);
+}
+.FZ_services .service .content{}
+.FZ_services .service .content{}
 
 /* ================= 
       Device responsiveness
