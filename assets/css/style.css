@@ -552,7 +552,7 @@ position: relative;
 }
 
 .FZ_services .service:hover img{
-  
+  transform: scale(1.3);
 }
 
 .FZ_services .service .content{
@@ -571,6 +571,10 @@ position: relative;
 
 .FZ_services .service:hover .content{
   transform: translateY(0);
+  backdrop-filter: blur(10px);
+  display: flex;
+  flex-direction: column ;
+  justify-content: center;
 }
 
 .FZ_services .service .content h4{
@@ -582,7 +586,8 @@ position: relative;
 .FZ_services .service .content p{
   padding-top: 20px;
   transform: scale(0);
-  transition: 0.6s;
+  transition: transform 0.7s;
+  text-align: center;
 }
 
 .FZ_services .service:hover .content p{
