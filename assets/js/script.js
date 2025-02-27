@@ -1,6 +1,15 @@
 jQuery(function($) {
 
 
+  
+  AOS.init({
+    duration: 1000,
+    offset:10,
+    easing:'ease-in-out',
+    once:true,
+});
+
+
     // lenis initialization
     const lenis = new Lenis();
     function raf(time) {

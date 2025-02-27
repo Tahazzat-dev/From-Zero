@@ -8,8 +8,7 @@
     <!-- stylesheet -->
     <link rel="stylesheet" href="assets/css/theme.css" />
     <link rel="stylesheet" href="assets/css/style.css" />
-
-    
+    <link rel="stylesheet" href="assets/css/aos.css" />
   </head>
   <body class="flex flex_center">
     <!-- Header -->
@@ -19,16 +18,16 @@
       >
         <div class="FZ_site-logo">
           <a href="#">
-            <img src="assets/media/img/site-logo.png" alt="Site Logo" />
+            <img  data-aos-duration="900" data-aos="fade-down" src="assets/media/img/site-logo.png" alt="Site Logo" />
           </a>
         </div>
 
         <nav class="FZ_nav-links-wrap">
           <ul class="FZ_nav-links FZ_flex flex_align_center">
-            <li><a href="#">Home</a></li>
-            <li><a href="#">Projects</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Contact</a></li>
+            <li  data-aos-delay="100" data-aos="fade-down"><a  href="#">Home</a></li>
+            <li data-aos-delay="200" data-aos="fade-down"><a href="#">Projects</a></li>
+            <li data-aos-delay="300" data-aos="fade-down"><a href="#">About</a></li>
+            <li data-aos-delay="400" data-aos="fade-down"><a href="#">Contact</a></li>
           </ul>
         </nav>
 
@@ -73,123 +72,121 @@
           class="FZ_home-banner-inner FZ_container FZ_flex flex_align_center"
         >
           <div class="banner-content">
-            <h4 class="fs-xl">House 30 Road No. 20, Dhaka 1230</h4>
-            <h1 class="fs-5xl">Awesome Design for the ELITE RESIDENCE</h1>
-            <p class="fs-md">
+            <h4 data-aos="zoom-in" class="fs-xl">House 30 Road No. 20, Dhaka 1230</h4>
+            <h1 data-aos-delay="500" data-aos="zoom-in" class="fs-5xl">Awesome Design for the ELITE RESIDENCE</h1>
+            <p data-aos-delay="800" data-aos="zoom-in" class="fs-md">
               The main objective of the project – transformation of DHAKA City
               in innovative SMART CITY and tourist center.
             </p>
-            <a href="#" class="FZ_btn">EXPLORE IT</a>
+            <a data-aos-delay="1000" data-aos="zoom-in" href="#" class="FZ_btn">EXPLORE IT</a>
           </div>
         </div>
       </div>
       <!-- banner ends -->
 
+      <!-- about us start -->
+      <section
+        class="FZ_section-gap-top FZ_section-gap-bottom FZ_home-about-us-wrap"
+      >
+        <div
+          class="FZ_home-about-us-inner FZ_container FZ_flex flex_align_center"
+        >
+          <!-- experience counter start-->
+          <div data-aos="zoom-in" class="FZ_counter alone_item no-figure">
+            <div class="figures"></div>
 
-            <!-- about us start -->
-            <section
-            class="FZ_section-gap-top FZ_section-gap-bottom FZ_home-about-us-wrap"
-          >
             <div
-              class="FZ_home-about-us-inner FZ_container FZ_flex flex_align_center"
+              class="counter-outer s-back-switch"
+              style="
+                padding: 15px;
+                background-image: url('assets/media/img/Experience-background-image.jpg');
+              "
             >
-              <!-- experience counter start-->
-              <div class="FZ_counter alone_item no-figure">
-                <div class="figures"></div>
-    
-                <div
-                  class="counter-outer s-back-switch"
-                  style="
-                    padding: 15px;
-                    background-image: url('assets/media/img/Experience-background-image.jpg');
-                  "
-                >
-                  <div class="numbers">
-                    <svg>
-                      <defs>
-                        <mask id="coming_mask_0" x="0" y="0">
-                          <rect
-                            class="coming-alpha"
-                            x="0"
-                            y="0"
-                            width="100%"
-                            height="100%"
-                          ></rect>
-                          <text
-                            class="count number"
-                            x="50%"
-                            y="45%"
-                            text-anchor="middle"
-                            alignment-baseline="middle"
-                          >
-                            14
-                          </text>
-                          <text
-                            class="count title"
-                            x="50%"
-                            y="70%"
-                            text-anchor="middle"
-                            alignment-baseline="middle"
-                          >
-                            YEARS OF EXPERIENCE
-                          </text>
-                        </mask>
-                      </defs>
+              <div class="numbers">
+                <svg>
+                  <defs>
+                    <mask id="coming_mask_0" x="0" y="0">
                       <rect
-                        style="
-                          -webkit-mask: url(#coming_mask_0);
-                          mask: url(#coming_mask_0);
-                        "
-                        class="base"
+                        class="coming-alpha"
                         x="0"
                         y="0"
                         width="100%"
                         height="100%"
                       ></rect>
-                    </svg>
-                  </div>
-                </div>
+                      <text
+                        class="count number"
+                        x="50%"
+                        y="45%"
+                        text-anchor="middle"
+                        alignment-baseline="middle"
+                      >
+                        14
+                      </text>
+                      <text
+                        class="count title"
+                        x="50%"
+                        y="70%"
+                        text-anchor="middle"
+                        alignment-baseline="middle"
+                      >
+                        YEARS OF EXPERIENCE
+                      </text>
+                    </mask>
+                  </defs>
+                  <rect
+                    style="
+                      -webkit-mask: url(#coming_mask_0);
+                      mask: url(#coming_mask_0);
+                    "
+                    class="base"
+                    x="0"
+                    y="0"
+                    width="100%"
+                    height="100%"
+                  ></rect>
+                </svg>
               </div>
-              <!-- experience counter ends-->
-    
-              <!-- about us info starts-->
-              <div class="about-us-info-card">
-                <div class="content">
-                  <h4 class="fs-lg">ABOUT US</h4>
-                  <h3 class="fs-4xl">
-                    We Offer Top-Quality Interior and Exterior Designs in Bangladesh
-                  </h3>
-                  <p>
-                    At FromZero, we specialize in comprehensive interior and
-                    exterior design solutions, transforming spaces into reflections
-                    of personality and purpose. Our designs seamlessly blend
-                    aesthetics with functionality, creating cohesive environments
-                    tailored to your needs.
-                  </p>
-                  <a href="#" class="FZ_btn btn_icon icon__phone">CONTACT US</a>
-                </div>
-              </div>
-              <!-- about us info ends-->
             </div>
-          </section>
-          <!-- about us ends -->
+          </div>
+          <!-- experience counter ends-->
 
+          <!-- about us info starts-->
+          <div class="about-us-info-card">
+            <div class="content">
+              <h4 data-aos-delay="500" data-aos="zoom-in-right" class="fs-lg">ABOUT US</h4>
+              <h3 data-aos-delay="700" data-aos="zoom-in-right" class="fs-4xl">
+                We Offer Top-Quality Interior and Exterior Designs in Bangladesh
+              </h3>
+              <p data-aos-delay="700" data-aos="zoom-in-right">
+                At FromZero, we specialize in comprehensive interior and
+                exterior design solutions, transforming spaces into reflections
+                of personality and purpose. Our designs seamlessly blend
+                aesthetics with functionality, creating cohesive environments
+                tailored to your needs.
+              </p>
+              <a data-aos-delay="600" data-aos="zoom-in-up" href="#" class="FZ_btn btn_icon icon__phone">CONTACT US</a>
+            </div>
+          </div>
+          <!-- about us info ends-->
+        </div>
+      </section>
+      <!-- about us ends -->
 
-              <!-- our expertise starts -->
+      <!-- our expertise starts -->
       <section class="FZ_section FZ_section-gap-huge FZ_our-expertise-wrap">
         <div class="FZ_our-expertise-inner FZ_container">
           <div class="top-text">
-            <h5 class="fs-lg">YOUR VISION</h5>
-            <h3 class="fs-4xl">Our Expertise</h3>
+            <h5 data-aos="zoom-in-up" class="fs-lg">YOUR VISION</h5>
+            <h3 data-aos-delay="300" data-aos="zoom-in-up" class="fs-4xl">Our Expertise</h3>
           </div>
           <div class="expertises FZ_flex">
             <!-- expertise card -->
             <div class="expertise-card">
               <div class="icon-text FZ_flex flex_align_center">
-                <img src="assets/media/img/customize-image.png" alt="Icon 1" />
-                <h3 class="fs-lg">Customized Design Solutions</h3>
+                <img data-aos="zoom-in-up" src="assets/media/img/customize-image.png" alt="Icon 1" />
+                <h3 data-aos="zoom-in-up" class="fs-lg">Customized Design Solutions</h3>
               </div>
-              <p>
+              <p data-aos="zoom-in-up">
                 Tailored interiors and exteriors to reflect your unique style
                 and needs.
               </p>
@@ -197,10 +194,10 @@
             <!-- expertise card -->
             <div class="expertise-card">
               <div class="icon-text FZ_flex flex_align_center">
-                <img src="assets/media/img/expert-img.png" alt="Icon 2" />
-                <h3 class="fs-lg">Expert Consultation</h3>
+                <img data-aos="zoom-in-up" src="assets/media/img/expert-img.png" alt="Icon 2" />
+                <h3 data-aos="zoom-in-up" class="fs-lg">Expert Consultation</h3>
               </div>
-              <p>
+              <p data-aos="zoom-in-up">
                 Professional advice to guide your design choices and maximize
                 your space.
               </p>
@@ -208,23 +205,23 @@
             <!-- expertise card -->
             <div class="expertise-card">
               <div class="icon-text FZ_flex flex_align_center">
-                <img
+                <img data-aos="zoom-in-up"
                   src="assets/media/img/sustainable-peace-img.png"
                   alt="Icon 3"
                 />
-                <h3 class="fs-lg">Sustainable Practices</h3>
+                <h3 data-aos="zoom-in-up" class="fs-lg">Sustainable Practices</h3>
               </div>
-              <p>
+              <p data-aos="zoom-in-up">
                 Eco-friendly materials and methods for a greener environment.
               </p>
             </div>
             <!-- expertise card -->
             <div class="expertise-card">
               <div class="icon-text FZ_flex flex_align_center">
-                <img src="assets/media/img/3d-visualization.png" alt="Icon 4" />
-                <h3 class="fs-lg">3D Visualization</h3>
+                <img data-aos="zoom-in-up" src="assets/media/img/3d-visualization.png" alt="Icon 4" />
+                <h3 data-aos="zoom-in-up" class="fs-lg">3D Visualization</h3>
               </div>
-              <p>
+              <p data-aos="zoom-in-up">
                 Realistic 3D models to preview your design before
                 implementation.
               </p>
@@ -232,13 +229,13 @@
             <!-- expertise card -->
             <div class="expertise-card">
               <div class="icon-text FZ_flex flex_align_center">
-                <img
+                <img data-aos="zoom-in-up"
                   src="assets/media/img/project-management-img.png"
                   alt="Icon 5"
                 />
-                <h3 class="fs-lg">Project Management</h3>
+                <h3 data-aos="zoom-in-up" class="fs-lg">Project Management</h3>
               </div>
-              <p>
+              <p data-aos="zoom-in-up">
                 End-to-end project oversight ensuring timely and budget-friendly
                 completion.
               </p>
@@ -246,13 +243,13 @@
             <!-- expertise card -->
             <div class="expertise-card">
               <div class="icon-text FZ_flex flex_align_center">
-                <img
+                <img data-aos="zoom-in-up"
                   src="assets/media/img/quality-craftsman-img.png"
                   alt="Icon 1"
                 />
-                <h3 class="fs-lg">Quality Craftsmanship</h3>
+                <h3 data-aos="zoom-in-up" class="fs-lg">Quality Craftsmanship</h3>
               </div>
-              <p>
+              <p data-aos="zoom-in-up">
                 High-quality materials and skilled craftsmanship for lasting
                 results.
               </p>
@@ -263,182 +260,230 @@
       </section>
       <!-- our expertise ends -->
 
-
-      
       <!-- last projects section starts -->
       <section class="FZ_section FZ_section-gap-huge FZ_our-projects-wrap">
         <div class="FZ_our-projects-inner FZ_container">
           <div class="top-text">
-            <h5 class="fs-lg">LAST PROJECTS</h5>
-            <h3 class="fs-4xl">Make it with passion.</h3>
+            <h5 data-aos="zoom-in-up" class="fs-lg">LAST PROJECTS</h5>
+            <h3 data-aos-delay="300" data-aos="zoom-in-up" class="fs-4xl">Make it with passion.</h3>
           </div>
 
-          <div class="FZ_latest-projects  FZ_flex flex_column">
+          <div class="FZ_latest-projects FZ_flex flex_column">
             <!-- latest project card -->
             <div class="latest-project FZ_flex flex_align_center flex_justify_between">
               <div class="latest-project-images">
                 <div class="latest-project-images-slider">
-                  <img src="assets/media/img/latest-project-img-1.jpg" alt="Project image" />
+                  <img data-aos="zoom-in"
+                    src="assets/media/img/latest-project-img-1.jpg"
+                    alt="Project image" />
                 </div>
               </div>
-
+          
               <div class="content">
-                <h6 class="fs-md">2024</h6>
-
-                <h4 class="fs-2xl">Poolscape Villa</h4>
-                <p>
-                  The Seascape Villas project constitutes one of the first
-                  urban interventions in this very unique context, a landscape
-                  dominated by mountains and sea.
+                <h6 data-aos="fade-in" class="fs-md">2024</h6>
+          
+                <h4 data-aos-delay="300" data-aos="zoom-in-up" class="fs-2xl">Poolscape Villa</h4>
+                <p data-aos-delay="500" data-aos="zoom-in-up">
+                  The Seascape Villas project constitutes one of the first urban
+                  interventions in this very unique context, a landscape dominated by
+                  mountains and sea.
                 </p>
-
-                <a href="#" class="FZ_btn btn_icon icon__arrow">READ</a>
+          
+                <a data-aos-delay="600" data-aos="zoom-in-up" href="#" class="FZ_btn btn_icon icon__arrow">READ</a>
               </div>
             </div>
-            <!-- latest project card -->
+          
+            <!-- latest project card (Updated with AOS animations) -->
             <div class="latest-project FZ_flex flex_align_center flex_justify_between">
               <div class="latest-project-images">
                 <div class="latest-project-images-slider">
-                  <img src="assets/media/img/latest-project-img-2.jpg" alt="Project image" />
+                  <img data-aos="zoom-in"
+                    src="assets/media/img/latest-project-img-2.jpg"
+                    alt="Project image" />
                 </div>
               </div>
-
+          
               <div class="content">
-                <h6 class="fs-md">2024</h6>
-
-                <h4 class="fs-2xl">Poolscape Villa</h4>
-                <p>
-                  The Seascape Villas project constitutes one of the first
-                  urban interventions in this very unique context, a landscape
-                  dominated by mountains and sea.
+                <h6 data-aos="fade-in" class="fs-md">2024</h6>
+          
+                <h4 data-aos-delay="300" data-aos="zoom-in-up" class="fs-2xl">Poolscape Villa</h4>
+                <p data-aos-delay="500" data-aos="zoom-in-up">
+                  The Seascape Villas project constitutes one of the first urban
+                  interventions in this very unique context, a landscape dominated by
+                  mountains and sea.
                 </p>
-
-                <a href="#" class="FZ_btn btn_icon icon__arrow">READ</a>
+          
+                <a data-aos-delay="600" data-aos="zoom-in-up" href="#" class="FZ_btn btn_icon icon__arrow">READ</a>
               </div>
             </div>
-
-            <!-- latest project card -->
+          
+            <!-- latest project card (Updated with AOS animations) -->
             <div class="latest-project FZ_flex flex_align_center flex_justify_between">
               <div class="latest-project-images">
                 <div class="latest-project-images-slider">
-                  <img src="assets/media/img/latest-project-img-3.jpg" alt="Project image" />
+                  <img data-aos="zoom-in"
+                    src="assets/media/img/latest-project-img-3.jpg"
+                    alt="Project image" />
                 </div>
               </div>
-
+          
               <div class="content">
-                <h6 class="fs-md">2024</h6>
-
-                <h4 class="fs-2xl">Poolscape Villa</h4>
-                <p>
-                  The Seascape Villas project constitutes one of the first
-                  urban interventions in this very unique context, a landscape
-                  dominated by mountains and sea.
+                <h6 data-aos="fade-in" class="fs-md">2024</h6>
+          
+                <h4 data-aos-delay="300" data-aos="zoom-in-up" class="fs-2xl">Poolscape Villa</h4>
+                <p data-aos-delay="500" data-aos="zoom-in-up">
+                  The Seascape Villas project constitutes one of the first urban
+                  interventions in this very unique context, a landscape dominated by
+                  mountains and sea.
                 </p>
-
-                <a href="#" class="FZ_btn btn_icon icon__arrow">READ</a>
+          
+                <a data-aos-delay="600" data-aos="zoom-in-up" href="#" class="FZ_btn btn_icon icon__arrow">READ</a>
               </div>
             </div>
-            <!-- latest project card -->
           </div>
+          
         </div>
       </section>
       <!-- last projects section ends -->
 
-
-      
       <!-- our services starts -->
       <section class="FZ_section FZ_section-gap-huge FZ_our-services-wrap">
         <div class="FZ_our-services-inner FZ_container">
           <div class="top-text">
-            <h5 class="fs-lg">BUILDING DREAMS WITH</h5>
-            <h3 class="fs-4xl">Our Services</h3>
+            <h5 data-aos="zoom-in-up" class="fs-lg">BUILDING DREAMS WITH</h5>
+            <h3 data-aos-delay="300" data-aos="zoom-in-up" class="fs-4xl">Our Services</h3>
           </div>
 
           <div class="FZ_services">
             <!-- service card -->
-             <div class="service">
-                 <div class="service-bg">
-                  <img src="assets/media/img/apartment-inerior-service.png" alt="Servoce image">
-                 </div>
-                 <div class="content">
-                   <h4 class="fs-2xl">Apartment Interior</h4>
-                   <p>Stylish, functional, and personalized interiors that elevate your living space with expert craftsmanship and attention to detail.</p>
-                 </div>
-             </div>
+            <div class="service">
+              <div class="service-bg">
+                <img 
+                 data-aos="zoom-in-up"
+                  src="assets/media/img/apartment-inerior-service.png"
+                  alt="Servoce image"
+                />
+              </div>
+              <div class="content">
+                <h4 data-aos-delay="900" data-aos="zoom-in-up" class="fs-2xl">Apartment Interior</h4>
+                <p >
+                  Stylish, functional, and personalized interiors that elevate
+                  your living space with expert craftsmanship and attention to
+                  detail.
+                </p>
+              </div>
+            </div>
             <!-- service card -->
-             <div class="service">
-                 <div class="service-bg">
-                  <img src="assets/media/img/kitchen-interior-service.png" alt="Servoce image">
-                 </div>
-                 <div class="content">
-                   <h4 class="fs-2xl">Kitchen Interior</h4>
-                   <p> Functional, stylish, and modern kitchens designed for efficiency, comfort, and elegance.</p>
-                 </div>
-             </div>
+            <div class="service">
+              <div class="service-bg">
+                <img
+                data-aos="zoom-in-up"
+                  src="assets/media/img/kitchen-interior-service.png"
+                  alt="Servoce image"
+                />
+              </div>
+              <div class="content">
+                <h4 data-aos-delay="900" data-aos="zoom-in-up" class="fs-2xl">Kitchen Interior</h4>
+                <p>
+                  Functional, stylish, and modern kitchens designed for
+                  efficiency, comfort, and elegance.
+                </p>
+              </div>
+            </div>
             <!-- service card -->
-             <div class="service">
-                 <div class="service-bg">
-                  <img src="assets/media/img/Design-and-consultancy-service.png" alt="Servoce image">
-                 </div>
-                 <div class="content">
-                   <h4 class="fs-2xl">Design & Consultancy</h4>
-                   <p>Expert guidance and innovative solutions to transform your vision into reality with precision and creativity.</p>
-                 </div>
-             </div>
+            <div class="service">
+              <div class="service-bg">
+                <img
+                data-aos="zoom-in-up"
+                  src="assets/media/img/Design-and-consultancy-service.png"
+                  alt="Servoce image"
+                />
+              </div>
+              <div class="content">
+                <h4 data-aos-delay="900" data-aos="zoom-in-up"  class="fs-2xl">Design & Consultancy</h4>
+                <p>
+                  Expert guidance and innovative solutions to transform your
+                  vision into reality with precision and creativity.
+                </p>
+              </div>
+            </div>
             <!-- service card -->
-             <div class="service">
-                 <div class="service-bg">
-                  <img src="assets/media/img/apartment-inerior-service.png" alt="Servoce image">
-                 </div>
-                 <div class="content">
-                   <h4 class="fs-2xl">Renovative Space </h4>
-                   <p>Transforming existing spaces with creative, functional, and modern design solutions.</p>
-                 </div>
-             </div>
+            <div class="service">
+              <div class="service-bg">
+                <img
+                data-aos="zoom-in-up"
+                  src="assets/media/img/apartment-inerior-service.png"
+                  alt="Servoce image"
+                />
+              </div>
+              <div class="content">
+                <h4 data-aos-delay="900" data-aos="zoom-in-up"  class="fs-2xl">Renovative Space</h4>
+                <p>
+                  Transforming existing spaces with creative, functional, and
+                  modern design solutions.
+                </p>
+              </div>
+            </div>
             <!-- service card -->
-             <div class="service">
-                 <div class="service-bg">
-                  <img src="assets/media/img/rooftop-landscape-service.png" alt="Servoce image">
-                 </div>
-                 <div class="content">
-                   <h4 class="fs-2xl">Rooftop Landscaping</h4>
-                   <p>Elevate your outdoor space with lush, sustainable, and stylish rooftop garden designs.</p>
-                 </div>
-             </div>
+            <div class="service">
+              <div class="service-bg">
+                <img  data-aos="zoom-in-up"
+                  src="assets/media/img/rooftop-landscape-service.png"
+                  alt="Servoce image"
+                />
+              </div>
+              <div class="content">
+                <h4 data-aos-delay="900" data-aos="zoom-in-up"  class="fs-2xl">Rooftop Landscaping</h4>
+                <p>
+                  Elevate your outdoor space with lush, sustainable, and stylish
+                  rooftop garden designs.
+                </p>
+              </div>
+            </div>
             <!-- service card -->
-             <div class="service">
-                 <div class="service-bg">
-                  <img src="assets/media/img/office-interior-service.png" alt="Servoce image">
-                 </div>
-                 <div class="content">
-                   <h4 class="fs-2xl">Office Interior</h4>
-                   <p> Smart, stylish, and functional workspaces designed to enhance productivity and reflect your brand identity.</p>
-                 </div>
-             </div>
+            <div class="service">
+              <div class="service-bg">
+                <img  data-aos="zoom-in-up"
+                  src="assets/media/img/office-interior-service.png"
+                  alt="Servoce image"
+                />
+              </div>
+              <div class="content">
+                <h4 data-aos-delay="900" data-aos="zoom-in-up"  class="fs-2xl">Office Interior</h4>
+                <p>
+                  Smart, stylish, and functional workspaces designed to enhance
+                  productivity and reflect your brand identity.
+                </p>
+              </div>
+            </div>
             <!-- service card -->
           </div>
         </div>
-     </section>
-    <!-- our services ends -->
+      </section>
+      <!-- our services ends -->
 
-
-    
-       <!-- testimonials starts -->
-       <section class="FZ_section FZ_section-gap-huge FZ_our-testimonials-wrap">
+      <!-- testimonials starts -->
+      <section class="FZ_section FZ_section-gap-huge FZ_our-testimonials-wrap">
         <div class="FZ_our-testimonials-inner FZ_container">
           <div class="top-text">
-            <h5 class="fs-lg">TESTIMONIALS</h5>
-            <h3 class="fs-4xl">They Love Us</h3>
+            <h5 data-aos="zoom-in-up" class="fs-lg">TESTIMONIALS</h5>
+            <h3 data-aos="zoom-in-up" class="fs-4xl">They Love Us</h3>
           </div>
 
-          <div class=" FZ_testimonials">
-
+          <div class="FZ_testimonials">
             <!-- testimonial -->
             <div class="FZ_testimonial">
-              <img src="assets/media/img/client-feedback-icon.png" alt="Client icon">
+              <img
+                src="assets/media/img/client-feedback-icon.png"
+                alt="Client icon"
+              />
 
               <div class="content">
-                <p>The way you approached the project was professional, and the final design was nothing short of extraordinary. A true testament to your skill and vision.</p>
+                <p>
+                  The way you approached the project was professional, and the
+                  final design was nothing short of extraordinary. A true
+                  testament to your skill and vision.
+                </p>
                 <h6 class="fs-md">Jamshed Mojumdar</h6>
                 <p>Bashundhara, Dhaka</p>
               </div>
@@ -446,37 +491,163 @@
 
             <!-- testimonial -->
             <div class="FZ_testimonial">
-              <img src="assets/media/img/client-feedback-icon.png" alt="Client icon">
+              <img
+                src="assets/media/img/client-feedback-icon.png"
+                alt="Client icon"
+              />
 
               <div class="content">
-                <p>Working with FromZero was a game-changer. Their ability to envision and create something from nothing is nothing short of extraordinary.</p>
+                <p>
+                  Working with FromZero was a game-changer. Their ability to
+                  envision and create something from nothing is nothing short of
+                  extraordinary.
+                </p>
                 <h6 class="fs-md">Salman Farshi</h6>
                 <p>Rupnagar, Dhaka</p>
               </div>
             </div>
             <!-- testimonial -->
             <div class="FZ_testimonial">
-              <img src="assets/media/img/client-feedback-icon.png" alt="Client icon">
+              <img
+                src="assets/media/img/client-feedback-icon.png"
+                alt="Client icon"
+              />
 
               <div class="content">
-                <p>FromZero has an exceptional ability to turn even the most basic ideas into stunning, functional works of art. Truly a master of design!</p>
+                <p>
+                  FromZero has an exceptional ability to turn even the most
+                  basic ideas into stunning, functional works of art. Truly a
+                  master of design!
+                </p>
                 <h6 class="fs-md">Kyle</h6>
                 <p>Brooklyn, NewYork</p>
               </div>
             </div>
             <!-- testimonial -->
+          </div>
+        </div>
+      </section>
+      <!-- testimonials ends -->
 
+      <!-- faq section starts -->
+      <section class="FZ_section FZ_section-gap-bottom FZ_faq-wrap">
+        <div class="FZ_faq-inner FZ_container">
+          <div class="top-text">
+            <h5 data-aos="zoom-in-up" class="fs-lg">Your questions, our answers.</h5>
+            <h3 data-aos="zoom-in-up" class="fs-4xl">FAQ</h3>
           </div>
 
-        </div>
-     </section>
-    <!-- testimonials ends -->
+          <div class="FZ_accordion">
+            <div class="FZ_accordion__item">
+              <div data-aos="zoom-in" class="FZ_accordion__header" data-toggle="#faq1">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit?
+              </div>
+              <div class="FZ_accordion__content" id="faq1">
+                <p >
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                  Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                  laboris nisi ut aliquip ex ea commodo consequat. Duis aute
+                  irure dolor in reprehenderit in voluptate velit esse cillum
+                  dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+                  cupidatat non proident, sunt in culpa qui officia deserunt
+                  mollit anim id est laborum.
+                </p>
+              </div>
+            </div>
 
+            <div class="FZ_accordion__item">
+              <div data-aos="zoom-in" class="FZ_accordion__header" data-toggle="#faq2">
+                But I must explain to you how all this mistaken idea?
+              </div>
+              <div class="FZ_accordion__content" id="faq2">
+                <p>
+                  Sed ut perspiciatis unde omnis iste natus error sit voluptatem
+                  accusantium doloremque laudantium, totam rem aperiam, eaque
+                  ipsa quae ab illo inventore veritatis et quasi architecto
+                  beata
+                </p>
+              </div>
+            </div>
+
+            <div class="FZ_accordion__item">
+              <div data-aos="zoom-in" class="FZ_accordion__header" data-toggle="#faq3">
+                At vero eos et accusamus et iusto odio?
+              </div>
+              <div class="FZ_accordion__content" id="faq3">
+                <p>
+                  But I must explain to you how all this mistaken idea of
+                  denouncing pleasure and praising pain was born and I will give
+                  you a complete account of the system, and expound the actual
+                  teachings of the great explorer of the truth, the
+                  master-builder of human happiness. No one rejects, dislikes,
+                  or avoids pleasure itself, because it is pleasure, but because
+                  those who do not know how to pursue pleasure rationally
+                  encounter consequences that are extremely painful
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- faq section ends -->
+    </main>
+
+
+    
+    <!-- Footer -->
+    <footer class="FZ_footer FZ_section-gap-equal">
+
+      <!-- <div class="footer-bg">
+        <div class="overlay"></div>
+          <picture>
+                    <source srcset="assets/media/img/footer-bg-small.png" media="(max-width: 767px)">
+                    <source srcset="assets/media/img/footer-bg-medium.png" media="(max-width: 1023px) and (min-width: 768px)">
+                    <source srcset="assets/media/img/footer-bg-large.png" media="(min-width: 1024px)">
+                    <img src="assets/media/img/footer-bg-medium.png" alt="footer background image" />
+            </picture>
+      </div> -->
+      <div class="FZ_footer-inner FZ_container">
+
+        <!-- top footer -->
+        <div class="FZ_footer-top FZ_flex flex_justify_between">
+          <div class="col site_info">
+            <div class="FZ_site-logo">
+              <img  src="assets/media/img/footer-site-logo.png" alt="Site logo">
+            </div>
+            <p >The company principle of Architecture-Studio is the collective conception. From the very beginning, the practice has believed in the virtues of exchange, crossing ideas, common effort, shared knowledge and enthusiasm.</p>
+          </div>
+
+          <div class="col contact_info FZ_flex flex_column">
+            <h5 class="fs-lg">GET IN TOUCH</h5>
+            <p class="whats-app FZ_flex flex_align_center"><img src="assets/media/img/whats-app-icon.png" alt="icon" />+880 1818-339339</p>
+            <p class="inquery-mail FZ_flex flex_align_center"><img src="assets/media/img/enquery-email-icon.png" alt="icon" />inquiry@fromzerodesign.studio</p>
+            <p class="mail FZ_flex flex_align_center"><img src="assets/media/img/email-icon.png" alt="icon" />paragkhan@gmail.com</p>
+          </div>
+        </div>
+
+
+        
+        <!-- bottom footer -->
+        <div class="section-divider divider__white FZ_gap-xs-equal">
+          <span></span>
+        </div>
+        <div class="FZ_footer-bottom FZ_flex flex_justify_between">
+          <p>FromZero &copy; 2025 all rights reserved</p>
+          <div class="social-icons FZ_flex flex_align_center">
+              <a data-aos="" href="#" class="social-icon"><img src="assets/media/img/facebook-icon.png" alt="Social icon"></a>
+              <a href="#" class="social-icon"><img src="assets/media/img/twitter-icon.png" alt="Social icon"></a>
+              <a href="#" class="social-icon"><img src="assets/media/img/linked-in-icon.png" alt="Social icon"></a>
+          </div>
+        </div>
+            </div>
+    </footer>
 
     <!-- scripts -->
     <script src="assets/js/jquery-3.7.1.min.js"></script>
     <script src="assets/js/lenis.js"></script>
     <script src="assets/js/slick-slider.js"></script>
+    <script src="assets/js/aos.js"></script>
     <script src="assets/js/script.js"></script>
   </body>
 </html>
