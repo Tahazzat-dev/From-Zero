@@ -252,10 +252,6 @@ gap: 40px;
       margin-bottom: 20px;
 }
 
-
-.FZ_home-banner-wrap{}
-.FZ_home-banner-wrap{}
-
 /* home about us  */
 .FZ_home-about-us-inner{
       max-width: 1200px;
@@ -382,17 +378,18 @@ gap: 40px;
       color: var(--clr-white);
     }
 
-    .FZ_our-expertise-inner .top-text{
+    .FZ_section .top-text{
       margin-bottom: var(--spacing-sm);
     }
     
-    .FZ_our-expertise-inner .top-text h5{
+    .FZ_section .top-text h5{
       font-weight: 300;
       margin-bottom: 10px;
       text-align: center;
+      text-transform: uppercase;
     }
     
-    .FZ_our-expertise-inner .top-text h3{
+    .FZ_section .top-text h3{
       text-align: center;
     }
 
@@ -417,25 +414,13 @@ gap: 40px;
     /* home latest projects */
 .FZ_our-projects-wrap{
 width: 100%;
+margin-top: var(--spacing-sm);
 }
 
 .FZ_our-projects-inner{
   max-width: 1200px;
 }
 
-.FZ_our-projects-inner .top-text{
-  margin-bottom: var(--spacing-sm);
-}
-
-.FZ_our-projects-inner .top-text h5{
-  font-weight: 300;
-  margin-bottom: 10px;
-  text-align: center;
-}
-
-.FZ_our-projects-inner .top-text h3{
-  text-align: center;
-}
 
 .FZ_latest-projects{
  margin: 0 auto;
@@ -502,23 +487,9 @@ position: relative;
 
 /* our services */
 .FZ_our-services-wrap{
-  /* background-color: var(--clr-black); */
-  /* color: var(--clr-white); */
-}
-
-
-.FZ_our-services-inner .top-text{
-  margin-bottom: var(--spacing-sm);
-}
-
-.FZ_our-services-inner .top-text h5{
-  font-weight: 300;
-  margin-bottom: 10px;
-  text-align: center;
-}
-
-.FZ_our-services-inner .top-text h3{
-  text-align: center;
+  background-color: var(--clr-black);
+  color: var(--clr-white);
+  margin-top: var(--spacing-sm);
 }
 
 .FZ_services{
@@ -575,6 +546,9 @@ position: relative;
   display: flex;
   flex-direction: column ;
   justify-content: center;
+
+  /* optional in dark section background */
+  background-color: rgba(48, 48, 48, 0.536);
 }
 
 .FZ_services .service .content h4{
@@ -594,8 +568,198 @@ position: relative;
   padding-top: 0;
   transform: scale(1);
 }
-.FZ_services .service .content{}
-.FZ_services .service .content{}
+
+
+/* testimonials */
+.FZ_our-testimonials-inner{
+  margin-top: var(--spacing-sm);
+  max-width: 900px;
+}
+
+.FZ_testimonials{
+  -webkit-box-shadow: 0 30px 50px rgba(0,0,0,.2);
+  box-shadow: 0 30px 50px rgba(0,0,0,.2); 
+  /* max-height: 200px; */
+  overflow: hidden;
+}
+
+.FZ_testimonials .FZ_testimonial{
+  padding: 20px;
+  width: 100%;
+  background-color: var(--clr-white);
+}
+
+.FZ_testimonials .FZ_testimonial img{
+  margin: 0 auto;
+  max-width: 50px;
+  margin-bottom: 20px;
+}
+.FZ_testimonials .FZ_testimonial h6{
+  margin-top: 25px;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.FZ_testimonials .FZ_testimonial p{
+  text-align: center;
+}
+
+/* accordion  */
+.FZ_faq-inner{
+  margin-top: var(--spacing-sm);
+  max-width: 1200px;
+}
+.FZ_accordion {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 100%;
+}
+
+.FZ_accordion__item {
+  border: 1px solid #e5f3fa;
+  overflow: hidden;
+  border: 1px solid var(--clr-secondary-500);
+}
+
+.FZ_accordion__header {
+padding: 20px;
+  font-weight: 600;
+  cursor: pointer;
+  position: relative;
+  /* margin-bottom: 0px;
+  transition: .4s; */
+}
+
+.FZ_accordion__header::after {
+  content: '';
+  background: url("../media/icon/angle-down.svg") no-repeat center;
+  width: 20px;
+  height: 20px;
+  transition: .4s;
+  display: inline-block;
+  position: absolute;
+  right: 20px;
+  top: 20px;
+  z-index: 1;
+}
+
+.FZ_accordion__header.active {
+  background: var(--clr-secondary-500);
+  /* margin-bottom: 20px; */
+  /* color: var(--clr-white); */
+}
+
+.FZ_accordion__header.active::after {
+  transform: rotateX(180deg);
+}
+
+.FZ_accordion__item .FZ_accordion__content {
+  padding: 0 20px;
+
+  max-height: 0;
+  transition: .5s;
+  overflow: hidden;
+}
+
+.FZ_accordion__item  .FZ_accordion__header.active ~ .FZ_accordion__content {
+  padding: 20px;
+}
+
+
+/* footer */
+.FZ_footer{
+  background-color: var(--clr-black);
+  color: var(--clr-white);
+  position: relative;
+  overflow: hidden ;
+  z-index: 0;
+}
+
+.section-divider{
+  width: 100%;
+}
+
+.section-divider span{
+  width: 100%;
+  height: 1px;
+  display: block;
+}
+
+.section-divider.divider__white span{
+  background-color: var(--clr-primary-500);
+}
+.section-divider.divider__black span{
+  background-color: var(--clr-secondary-500);
+}
+
+.FZ_footer-top .col{
+  max-width: 700px;
+}
+.FZ_footer-top .col.site_info p{
+  margin-top: 15px;
+
+}
+.FZ_footer-top .col.contact_info{
+  text-align: right;
+  gap: 8px;
+}
+.FZ_footer-top .col.contact_info h5{
+  margin-bottom: 10px;
+}
+
+.FZ_footer-top .col.contact_info p{
+  justify-content: end;
+  gap: 10px;
+}
+
+.FZ_footer-top .col .whats-app img{
+  max-width: 20px;
+}
+
+.FZ_footer-top .col .inquery-mail img{
+  max-width: 23px;
+}
+
+.FZ_footer-top .col .mail img{
+  max-width: 22px;
+}
+
+.social-icons{
+  gap: 20px;
+}
+
+.social-icons img{
+  width: 25px ;
+}
+
+
+/* .FZ_footer .footer-bg{
+      width: 100%;
+      height: 100%;
+      z-index: -1;
+      position: absolute;
+      background-color: var(--clr-black);
+      top: 0;
+      left: 0;
+} */
+/* .FZ_footer img{
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+} */
+
+
+/* .FZ_footer .overlay{
+      position: absolute;
+      z-index: 1;
+      top:0;
+      left: 0;
+      background-color: rgba(8, 8, 8, 0.74);
+      backdrop-filter: blur(15px);
+      width: 100%;
+      height: 100%;
+} */
 
 /* ================= 
       Device responsiveness
@@ -655,7 +819,7 @@ position: relative;
             height: 100%;
             padding: 70px 0;
             transition: var(--transition-normal);
-            background-color: var(--clr-secondary-900);
+            background-color: var(--clr-secondary-700);
             transform: translateX(-110%);
           }
 
@@ -715,6 +879,12 @@ position: relative;
 @media screen and (max-width: 560px) {
 
 
+  /* home banner */
+  .FZ_home-banner-inner .banner-content {
+    padding: 20px 16px;
+}
+
+
       /* home page about us */
       /* Experience card */
       .FZ_counter.multi_item .numbers svg {
@@ -729,4 +899,6 @@ position: relative;
           .FZ_counter.multi_item .numbers svg mask .title {
             font-size: 11px;
           }
+
+
 }

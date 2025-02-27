@@ -42,5 +42,44 @@ jQuery(function($) {
 
           const hambergerMenu = new HambergerMenu()
 
+
+
+          // testimonials slider
+          $('.FZ_testimonials').slick({
+            vertical: true,
+           verticalSwiping: true,
+           slidesToShow: 1,
+           slidesToScroll: 1,
+           autoplay: true,
+           autoplaySpeed: 3000,
+           arrows: false,
+          })
+
+
+
+          $('[data-toggle]').on('click', function() {
+            var selector = $(this).data('toggle');
+            var $block = $(selector);
+        
+            // Close all other open accordions
+            $('[data-toggle]').not(this).each(function() {
+              var otherSelector = $(this).data('toggle');
+              var $otherBlock = $(otherSelector);
+              if ($(this).hasClass('active')) {
+                $otherBlock.css('max-height', '');
+                $(this).removeClass('active');
+              }
+            });
+        
+            // Toggle the current accordion
+            if ($(this).hasClass('active')) {
+              $block.css('max-height', '');
+            } else {
+              $block.css('max-height', $block[0].scrollHeight + 40 + 'px');
+            }
+        
+            $(this).toggleClass('active');
+          });
+
   });
   
