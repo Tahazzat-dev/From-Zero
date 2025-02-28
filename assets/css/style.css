@@ -417,6 +417,7 @@ body {
 .FZ_latest-projects {
   margin: 0 auto;
   gap: var(--spacing-md);
+  overflow: hidden;
 }
 
 .FZ_latest-projects .latest-project:nth-child(even) {
