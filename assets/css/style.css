@@ -719,31 +719,123 @@ body {
   width: 25px;
 }
 
-/* .FZ_footer .footer-bg{
-      width: 100%;
-      height: 100%;
-      z-index: -1;
-      position: absolute;
-      background-color: var(--clr-black);
-      top: 0;
-      left: 0;
-} */
-/* .FZ_footer img{
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-} */
 
-/* .FZ_footer .overlay{
-      position: absolute;
-      z-index: 1;
-      top:0;
-      left: 0;
-      background-color: rgba(8, 8, 8, 0.74);
-      backdrop-filter: blur(15px);
-      width: 100%;
-      height: 100%;
-} */
+
+/* ========= common page utility ========== */
+.FZ_page-banner-wrap{
+ position: relative;
+ width: 100%;
+ height: 500px;
+ max-height: 500px;
+ overflow: hidden;
+}
+
+.FZ_page-banner-wrap .banner-bg,
+.FZ_page-banner-wrap .banner-bg picture{
+  width: 100%;
+  height: 100%;
+}
+
+.FZ_page-banner-wrap .banner-bg{
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1
+}
+.FZ_page-banner-wrap .banner-bg .bg-overlay{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(130, 130, 130, 0);
+  z-index: 0;
+  backdrop-filter: blur(6px);
+}
+
+.FZ_page-banner-wrap .banner-bg img{
+ width: 100%;
+ height: 100%;
+ object-fit: cover;
+}
+
+.FZ_page-banner-inner{
+  height: 100%;
+  width: 100%;
+}
+
+.FZ_page-banner-inner .banner-content{
+  width: 100%;
+  padding-top: 85px;
+}
+
+.FZ_page-banner-inner .banner-content h1{
+  margin-bottom: 10px;
+}
+
+.FZ_page-banner-inner .banner-content h4{
+  font-weight: 400;
+}
+
+/* ================ contact page =========== */
+.FZ_contact-info-inner{
+  max-width:1000px;
+  position: relative;
+}
+
+.FZ_contact-info-inner .contact-container{
+  gap: 100px;
+}
+
+.FZ_contact-info-inner .contact_info h3{
+  margin-bottom: 10px;
+}
+.FZ_contact-info-inner .contact_info .des{
+  margin-bottom: 20px;
+}
+
+
+.FZ_contact-info-inner .contact-form{
+  gap: 15px;
+}
+
+.FZ_contact-info-inner .contact-form .FZ_flex{
+  gap: 15px;
+}
+
+.FZ_contact-info-inner .contact-form input,
+.FZ_contact-info-inner .contact-form textarea{
+  padding: 8px 15px;
+  border: 1px solid var(--clr-secondary-500);
+  outline: none;
+}
+
+
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+/* For Firefox */
+input[type="number"] {
+    -moz-appearance: textfield;
+}
+
+.FZ_contact-info-inner .contact-form textarea{
+  resize: none;
+  height: 100px;
+}
+
+.FZ_contact-info-inner .contact-form input:focus,
+.FZ_contact-info-inner .contact-form textarea:focus{
+  border: 1px solid var(--clr-secondary-700);
+}
+
+
+
+
+
 
 /* ================= 
       Device responsiveness
@@ -786,6 +878,35 @@ body {
   .FZ_footer-top .col {
     max-width: 45%;
 }
+
+
+/* ========= common page utility ========== */
+.FZ_page-banner-wrap{
+  height: 400px;
+  max-height: 400px;
+ }
+
+
+/* ========== contact us page ====== */
+.FZ_contact-info-inner .contact-container{
+  gap: 30px;
+}
+
+.FZ_contact-info-inner .contact_info{
+  min-width: 300px;
+}
+
+.FZ_contact-info-inner .contact-form{
+  width: 61%;
+  min-width: 50%;
+}
+
+
+  .FZ_contact-info-inner .contact-form input,
+  .FZ_contact-info-inner .contact-form textarea{
+    width:100%;
+  }
+
 
 }
 
@@ -927,6 +1048,19 @@ body {
 }
 
 
+/* ============ contact page ========== */
+.FZ_contact-info-inner .contact-container {
+  gap: 30px;
+  flex-direction: column;
+  margin: 0 auto;
+}
+
+.FZ_contact-info-inner .contact-form {
+  flex-grow: 1;
+  width: auto;
+  min-width: 60%;
+}
+
 
 
 
@@ -1031,6 +1165,14 @@ body {
 .FZ_footer-bottom {
   flex-direction: column;
   gap: 10px;
+
 }
+
+
+.FZ_contact-info-inner .contact-form .FZ_flex {
+ flex-direction: column;
+}
+
+
 
 }
