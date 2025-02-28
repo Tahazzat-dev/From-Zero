@@ -446,8 +446,17 @@ ol {
   position: relative;
 }
 
+.FZ_btn.btn_white{
+  background-color: var(--clr-gray);
+  color: var(--clr-black);
+}
+
 .FZ_btn:hover {
   background-color: var(--clr-primary-900)
+}
+
+.FZ_btn.btn_white:hover{
+  background-color: var(--clr-white);
 }
 
 .FZ_btn.btn_icon{
