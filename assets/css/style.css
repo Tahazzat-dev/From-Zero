@@ -255,7 +255,57 @@ body {
   max-width: 1200px;
 }
 
+/* partners marquee */
+
+.FZ_partners-inner h5{
+  margin-bottom: 25px;
+}
+
+
+.FZ_marquee {
+  width: 100%;
+  height: 100px;
+  pointer-events: none;
+  overflow: hidden;
+}
+
+
+.FZ_marquee-inner-wrap {
+  height: 100%;
+  width: 100%;
+}
+
+.FZ_marquee-inner {
+    width: auto;
+    height: 100%;
+    width: fit-content;
+    align-items: center;
+    display: flex;
+    position: relative;
+    animation: partners_marquee 40s linear infinite;
+    will-change: transform;
+  }
+  
+  @keyframes partners_marquee {
+    to {
+      transform: translateX(-50%);
+    }
+  }
+
+.FZ_marquee-img {
+ width: auto;
+ height: auto;
+ margin: 0 25px;
+}
+
+.FZ_marquee-img img{
+    width: auto;
+    min-width: 200px;
+    display: block;
+    height: 100px;
+}
 /* experience counter */
+
 
 .FZ_counter {
   position: relative;
@@ -762,11 +812,16 @@ body {
 .FZ_page-banner-inner{
   height: 100%;
   width: 100%;
+  justify-content: center;
 }
 
 .FZ_page-banner-inner .banner-content{
   width: 100%;
-  padding-top: 85px;
+  max-width: 700px;
+  margin-top: 85px;
+  background-color: var(--clr-secondary-500);
+  padding: 30px 20px;
+  backdrop-filter: blur(2px);
 }
 
 .FZ_page-banner-inner .banner-content h1{
@@ -832,6 +887,40 @@ input[type="number"] {
   border: 1px solid var(--clr-secondary-700);
 }
 
+
+
+/* ========== about us page ======= */
+
+
+
+.FZ_company-intro-wrap{
+  margin-top: var(--spacing-xs);
+}
+.FZ_company-intro-inner{
+  gap: 50px;
+}
+.FZ_company-intro-inner .company-profile{
+  width: 47%;
+}
+
+.FZ_company-intro-inner .company-profile img{
+  width: 100%;
+  object-fit: covere;
+}
+
+.FZ_company-intro-inner .content{
+  width: 45%;
+  z-index: -1;
+}
+
+.FZ_company-intro-inner .content h3{
+  margin-bottom: 15px;
+}
+
+.FZ_company-intro-wrap .FZ_company-vision h3{
+  margin-bottom: 15px;
+}
+.FZ_company-intro-inner{}
 
 
 
@@ -970,13 +1059,12 @@ input[type="number"] {
     border-top: 1px solid transparent;
     border-top: 1px solid var(--clr-primary-500);
   }
-
+ 
   .FZ_nav-links li a {
     font-size: var(--fs-2xl);
   }
 
   /* home about us */
-
   .FZ_home-about-us-inner {
     flex-direction: column;
   }
@@ -1012,6 +1100,19 @@ input[type="number"] {
     font-size: 16px;
   }
 
+  .FZ_partners-inner{
+    margin-top: 50px;
+  }
+
+  .FZ_partners-inner h5 {
+    margin-bottom: 15px;
+  }
+
+  .FZ_marquee-img img {
+    min-width: 100px;
+    height: auto;
+    min-height: 50px;
+  }
 
   /* home latest projects */
 
