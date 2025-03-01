@@ -1,6 +1,6 @@
 
 /* ===========================
-   CSS Reset (Cross-browser)
+    (Cross-browser)
 =========================== */
 *,
 *::before,
@@ -436,14 +436,44 @@ ol {
 
 /* Button Styles */
 .FZ_btn {
+  position: relative;
   display: inline-block;
+  width: auto; 
+  height: auto;
   padding: 10px 20px;
   border: none;
   background-color: var(--clr-black);
   color: var(--clr-white);
   font-size: var(--fs-base);
-  transition: var(--transition-normal);
-  position: relative;
+  transition: var(--transition-slow);
+  border: 1px solid var(--clr-black);
+  z-index: 0;
+  overflow: hidden;
+}
+
+.FZ_btn::before{
+  width: 0%;
+  height: 0%;
+  position:absolute;
+  top: 50%;
+  left: 50%;
+  content: ''; 
+  background-color: var(--clr-white);
+  transition: 0.7s;
+  z-index: -1;
+  transform: translate(-50%,-50%);
+  border-radius: 50%;
+}
+
+.FZ_btn:hover::before{
+  width: 130%;
+  height: 400%;
+}
+
+.FZ_btn:hover {
+  color: var(--clr-black);
+  transform: scaleX(1.02);
+  transition: transform 0.6s cubic-bezier(0.34, 5.56, 0.64, 1);
 }
 
 .FZ_btn.btn_white{
@@ -451,19 +481,22 @@ ol {
   color: var(--clr-black);
 }
 
-.FZ_btn:hover {
-  background-color: var(--clr-primary-900)
+.FZ_btn.btn_white{
+ border: 1px solid var(--clr-white);
 }
 
-.FZ_btn.btn_white:hover{
-  background-color: var(--clr-white);
+.FZ_btn.btn_white::before{
+  background-color: var(--clr-black);
+}
+.FZ_btn.btn_white:hover {
+  color: var(--clr-white);
 }
 
 .FZ_btn.btn_icon{
   padding-left: 45px;
 }
 
-.FZ_btn.btn_icon::before{
+.FZ_btn.btn_icon::after{
   content: "";
   display: inline-block;
   width: 18px;
@@ -476,9 +509,14 @@ ol {
   background-position: center;
 }
 
-.FZ_btn.icon__phone::before{
+.FZ_btn.icon__phone::after{
   transform: translateY(-53%);
   background-image: url('../media/icon/phone-icon-white.svg');
+}
+
+
+.FZ_btn.icon__phone:hover::after{
+  background-image: url('../media/icon/phone-icon-black.svg') !important;
 }
 
 .FZ_btn.icon__arrow{
@@ -486,7 +524,7 @@ ol {
   padding-right: 55px;
 }
 
-.FZ_btn.icon__arrow::before{
+.FZ_btn.icon__arrow::after{
   transform: translateY(-53%);
   left: unset;
   right: 20px;
@@ -497,8 +535,9 @@ ol {
   transition: var(--transition-normal);
 }
 
-.FZ_btn.icon__arrow:hover::before{
+.FZ_btn.icon__arrow:hover::after{
   right: 15px;
+  background-image: url('../media/icon/right-arrow-icon-black.svg');
 }
 
 /* ===========================

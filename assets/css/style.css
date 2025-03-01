@@ -189,6 +189,24 @@ body {
 
 .FZ_nav-links li a {
   font-size: var(--fs-md);
+  position: relative;
+  transition: var(--tran);
+}
+
+.FZ_nav-links li a::before {
+  position: absolute;
+  top: 105%;
+  left: 0;
+  background-color: var(--clr-black);
+  content: "";
+  width: 0%;
+  height: 2px;
+  transition: var(--transition-normal);
+}
+
+.FZ_nav-links li a:hover::before,
+.FZ_nav-links li a.active::before {
+  width: 100%;
 }
 
 .FZ_home-banner-wrap {
@@ -767,6 +785,12 @@ body {
 
 .social-icons img {
   width: 25px;
+  transition:var(--transition-normal) ease-out
+}
+
+
+.social-icons img:hover {
+  transform:scale(1.2);
 }
 
 
@@ -1259,9 +1283,10 @@ input[type="number"] {
   max-width: 20px;
 }
 
-.social-icons img {
+.social-icon img {
   width: 20px;
 }
+
 
 .FZ_footer-bottom {
   flex-direction: column;
